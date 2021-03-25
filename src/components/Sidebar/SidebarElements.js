@@ -7,6 +7,7 @@ export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
+  height: 100%;
   background: #0d0d0d;
   display: grid;
   align-items: center;
@@ -15,7 +16,6 @@ export const SidebarContainer = styled.aside`
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  top: 0;
 `;
 
 export const CloseIcon = styled(FaTimes)`
