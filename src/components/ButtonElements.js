@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link as ScrollLink } from "react-scroll";
 
-export const Button = styled.button`
+export const Button = styled(ScrollLink)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? "#01BF71" : "#010606")};
   white-space: nowrap;
@@ -12,6 +13,8 @@ export const Button = styled.button`
   align-items: center;
   transition: all 0.2s ease-in-out;
   border: none;
+  outline: 0;
+  cursor: pointer;
 
   &:hover {
     transition: all 0.2s ease-in-out;

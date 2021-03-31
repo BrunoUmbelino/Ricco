@@ -16,6 +16,7 @@ import {
 } from "./InfoElements";
 
 function InfoSection({
+  id,
   imgStart,
   topLine,
   lightText,
@@ -32,7 +33,7 @@ function InfoSection({
 }) {
   return (
     <>
-      <InfoContainer lightBg={lightBg}>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Columm1>

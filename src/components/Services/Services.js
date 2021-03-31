@@ -15,7 +15,7 @@ import Icon3 from "../../images/unlock.svg";
 function Services() {
   return (
     <>
-      <ServicesContainer>
+      <ServicesContainer id="services">
         <ServicesH1>Our Services</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>

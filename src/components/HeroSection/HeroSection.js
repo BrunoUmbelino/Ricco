@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Video from "../../videos/video.mp4";
+import { Button } from "../ButtonElements";
 import {
   HeroContainer,
   VideoBg,
@@ -10,8 +12,6 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
-import Video from "../../videos/video.mp4";
-import { Button } from "../ButtonElements";
 
 function Hero() {
   const [hover, setHover] = useState(false);
@@ -21,7 +21,7 @@ function Hero() {
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
@@ -32,13 +32,19 @@ function Hero() {
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
             dark="true"
+            to="signup"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            Get started
+            {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
