@@ -39,7 +39,7 @@ function Navbar({ toggle }) {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              dolla
+              Ricco
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />

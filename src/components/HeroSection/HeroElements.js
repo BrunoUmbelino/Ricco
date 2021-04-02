@@ -20,8 +20,8 @@ export const HeroContainer = styled.div`
     bottom: 0;
     background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.6) 100%
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.8) 100%
     );
 
     z-index: 2;
@@ -59,7 +59,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  color: #fff;
+  color: var(--primary);
   font-size: 48px;
   text-align: center;
 

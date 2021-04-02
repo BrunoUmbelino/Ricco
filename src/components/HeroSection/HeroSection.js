@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
-import { Button } from "../ButtonElements";
+import Video from "../../videos/woman-pays.mp4";
+import { ButtonScroll } from "../ButtonElements";
 import {
   HeroContainer,
   VideoBg,
@@ -26,12 +26,10 @@ function Hero() {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
-        <HeroP>
-          Sign up for a new accon today and receive $250 in credit towards your.
-        </HeroP>
+        <HeroH1>Ricco Account</HeroH1>
+        <HeroP>A new way to take care of your money.</HeroP>
         <HeroBtnWrapper>
-          <Button
+          <ButtonScroll
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
@@ -45,7 +43,7 @@ function Hero() {
           >
             Get started
             {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </ButtonScroll>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

@@ -8,9 +8,9 @@ import {
   ServicesP,
   ServicesWrapper,
 } from "./ServicesElements";
-import Icon1 from "../../images/car.svg";
-import Icon2 from "../../images/transfer_money.svg";
-import Icon3 from "../../images/unlock.svg";
+import Icon1 from "../../images/chatting.svg";
+import Icon2 from "../../images/internet-banking.svg";
+import Icon3 from "../../images/cash-on-hand.svg";
 
 function Services() {
   return (
@@ -20,14 +20,12 @@ function Services() {
         <ServicesWrapper>
           <ServicesCard>
             <ServicesIcon src={Icon1} />
-            <ServicesH2>Recuce expenses</ServicesH2>
-            <ServicesP>
-              We help recude your fess and increase your overall revenue.
-            </ServicesP>
+            <ServicesH2>Attendance</ServicesH2>
+            <ServicesP>Personalized service available 24/7 </ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon2} />
-            <ServicesH2>Virtual Offices</ServicesH2>
+            <ServicesH2>Internet Banking</ServicesH2>
             <ServicesP>
               You can access our platform online anywhere in the world.
             </ServicesP>
@@ -36,7 +34,7 @@ function Services() {
             <ServicesIcon src={Icon3} />
             <ServicesH2>Premium Benefits</ServicesH2>
             <ServicesP>
-              Unlock our special membership card that retur 5% cash back.
+              Unlock our special membership card that retur 6% cash back.
             </ServicesP>
           </ServicesCard>
         </ServicesWrapper>

@@ -4,10 +4,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./pages";
 import SigninPage from "./pages/signin";
+import GlobalStyle from "./components/GlobalStyle";
 
 function App() {
   return (
     <Router>
+      <GlobalStyle />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/signin" exact component={SigninPage} />

@@ -55,10 +55,10 @@ function Footer() {
           <FooterSocialMediaContainer>
             <SocialMediaWrap>
               <SocialLogo to="/" onClick={toggleHome}>
-                dolla
+                Ricco
               </SocialLogo>
               <WebsiteRights>
-                dolla © {new Date().getFullYear()}. All rigths reserved.
+                Ricco {new Date().getFullYear()}. © All rigths reserved.
               </WebsiteRights>
               <SocialIcons>
                 <SocialIconLink href="/" target="_blank" aria-label="Facebook">

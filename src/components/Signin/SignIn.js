@@ -26,6 +26,7 @@ function SignIn() {
             <FormInput type="password" />
             <FormButton type="submit">Continue</FormButton>
             <Text>Forgot password?</Text>
+            <Text>* fake authentication *</Text>
           </Form>
         </FormContent>
       </FormWrap>
