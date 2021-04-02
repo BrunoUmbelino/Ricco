@@ -1,3 +1,3 @@
 # Ricco 
 
-link: https://ricco.netlify.app/
+Site: https://ricco.netlify.app/
